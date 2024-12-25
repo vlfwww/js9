@@ -246,22 +246,161 @@
 // console.log(arr2)
 
 //13
-const arr = [];
-const n = Number(prompt('Введите количество'));
+// const arr = [];
+// const n = Number(prompt('Введите количество'));
 
-for (let i = 0; i < n; i++) {
-    let input = prompt('Введите значение:');
-    const num = Number(input);
+// for (let i = 0; i < n; i++) {
+//     let input = prompt('Введите значение:');
+//     const num = Number(input);
     
-    if (!isNaN(num) && input.trim() !== '') {
-        arr.push(num); 
-    } else {
-        console.log('Пожалуйста, введите корректное значение.');
-        i--; 
-    }
-}
+//     if (!isNaN(num) && input.trim() !== '') {
+//         arr.push(num); 
+//     } else {
+//         console.log('Пожалуйста, введите корректное значение.');
+//         i--; 
+//     }
+// }
 
-const arr1 = arr.map(function(el) {
-    return el ** 2; 
-});
-console.log(arr1);
+// const arr1 = arr.map(function(el) {
+//     return el ** 2; 
+// });
+// console.log(arr1);
+
+//14
+// const input1 = prompt("Введите первый массив");
+// const input2 = prompt("Введите второй массив");
+
+// const array1 = input1.split(',').map(Number);
+// const array2 = input2.split(',').map(Number);
+
+// const combinedArray = [...array1, ...array2];
+
+// console.log(combinedArray);
+
+//15
+// function sum(...numbers) {
+//     return numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// }
+// console.log(sum(1, 2, 3))
+// console.log(sum(4, 5, 6, 7))
+
+//16
+// const inputArray = prompt("Введите массив");
+// const additionalNumber = prompt("Введитe число");
+// const numbersArray = inputArray.split(',').map(Number);
+
+// const newArray = [Number(additionalNumber), ...numbersArray];
+// console.log(newArray);
+
+// 17
+// function toUpperCase(...args){
+//     let uppercased = [];
+//     for (let arg of args) {
+//         uppercased.push(arg.toUpperCase());
+//     }
+//     console.log(uppercased);
+// }
+// toUpperCase('apple', 'banana', 'cherry')
+
+// 18
+// const a = [2, 3, 4]
+// const result = a.reduce(function (proiz, elem){
+//     return proiz * elem
+// }, 1)
+// console.log(result)
+
+// 19
+// const a = [1, 'a', 3, 'b', 5]
+// const result = a.reduce(function (count, elem){
+//     if(!isNaN(elem))
+//         return count + 1
+//     return count
+// }, 0)
+// console.log(result)
+
+// 20
+// const a = ["apple", "banana", "cherry"]
+// const result = a.reduce(function (str, elem){
+//     return str + elem + ','
+// }, '')
+// console.log(result.slice(0, -1))
+
+// 21
+// const a = [3, 7, 2, 5]
+// const result = a.reduce(function(max, elem){
+//     if(elem > max)
+//         max = elem
+//     return max
+// }, a[0])
+// console.log(result)
+
+// 22
+// const a = [1, 2, 3, 4] 
+// const result = a.map(function(elem, index){
+//     return elem * index
+// })
+// console.log(result)
+
+// 23
+// const a = [2, 4, 6, 9]
+// const result = a.every(function(elem){
+//     if (elem % 2 === 0) return true
+//     else return false
+// })
+// console.log(result)
+
+// 24
+// const a = [1, -2, -3, -4]
+// const result = a.some(function(elem){
+//     if (elem > 0) return true
+//     else return false
+// })
+// console.log(result)
+
+// 25
+// const a = ["apple", "banana", "cherry"]
+// const result = a.map(function(elem){
+//     return elem.length
+// })
+// console.log(result)
+
+// 26
+// const a = ["apple", "banana", "cherry"]
+// const result = a.every(function(elem){
+//     if (elem.length > 3) return true
+//     else return false
+// })
+// console.log(result)
+
+// 27
+// const a = ["apple", "banana", "cat"]
+// const result = a.filter(function(elem){
+//     if (elem.length < 5) return true
+//     else return false
+// })
+// console.log(result)
+
+
+// 28
+// const a = ["apple", "banana", "cherry"]
+// const result = a.map(function(elem){
+//     return elem.toUpperCase()
+// })
+// console.log(result)
+
+// 29
+// const a = [-10, 20, 30]
+// const result = a.filter(function(elem){
+//     if (elem > 0) return true
+//     else return false
+// })
+// console.log(result)
+
+// 30
+// const a = [10, 3, 5, 7]
+// const result = a.reduce(function(min, elem){
+//     if(elem < min)
+//         min = elem
+//     return min
+// }, a[0])
+// console.log(result)
